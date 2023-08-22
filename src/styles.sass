@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+// Definindo variáveis para cores
+$background-color: white
+$header-footer-color: #EFC4B9
+$font-color: black
+
+// Estilo global
+body
+  background-color: $background-color
+  color: $font-color
+  font-family: Arial, sans-serif
+  line-height: 1.6
+  margin: 0
+
+// Estilo para o cabeçalho e rodapé
+.header, .footer
+  background-color: $header-footer-color
+  padding: 20px
+  text-align: center
+
+// Responsividade
+@media (max-width: 768px)
+  body
+    font-size: 16px
+
+  .header, .footer
+    padding: 10px
+
+@media (max-width: 480px)
+  body
+    font-size: 14px
+
+  .header, .footer
+    padding: 5px

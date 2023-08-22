@@ -1,0 +1,29 @@
+@keyframes slideInFromLeft
+    0%
+        transform: translateX(-100%)
+    100%
+        transform: translateX(0)
+
+.header
+    animation: slideInFromLeft 0.5s ease forwards
+    background-color: #EFC4B9
+    .logo
+        text-align: center // Centraliza o texto abaixo do logotipo
+    .logo-text
+        font-size: 14px
+        color: black
+        font-weight: bold
+
+.menu
+    .menu-item
+        text-decoration: none // Remove o sublinhado dos links
+        color: black
+        font-weight: bold
+        transition: color 0.3s
+        cursor: pointer // Define o cursor como um ponteiro
+
+    &:hover
+        color: #555
+
+    &:active
+        color: #333
