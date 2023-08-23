@@ -1,0 +1,16 @@
+@import "~font-awesome/css/font-awesome.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+body, button, input, textarea {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;  /* Usando a espessura mais bold para cabeçalhos */
+}
+
+p, li, a {
+  font-weight: 400;  /* Usando a espessura regular para textos padrão */
+}
+

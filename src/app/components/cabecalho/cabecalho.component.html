@@ -1,18 +1,39 @@
 <header class="header text-dark py-3">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-lg-10 d-flex justify-content-between align-items-center">
-          <div class="logo">
-            <img src="../../../assets/images/logo1.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
+        <div class="col-lg-10 d-flex align-items-center">
+          <!-- Logo -->
+          <div class="logo flex-shrink-0">
+            <img
+              src="../../../assets/images/logo1.png"
+              alt="Logo"
+              class="img-fluid"
+              style="max-width: 100px"
+            />
           </div>
-          <div class="logo-text text-center">Arquitetura e Urbanismo</div> <!-- Movido para o centro -->
-          <nav class="menu d-flex gap-3">
-            <a routerLink="/" class="menu-item text-dark font-weight-bold">Home</a>
-            <a routerLink="/sobre" class="menu-item text-dark font-weight-bold">Sobre</a>
-            <a routerLink="/projetos" class="menu-item text-dark font-weight-bold">Projetos</a>
-            <a routerLink="/contato" class="menu-item text-dark font-weight-bold">Contato</a>
-          </nav>
+  
+          <!-- Texto Centralizado -->
+          <div class="logo-text text-center flex-grow-1">
+            Portfólio Arquitetura e Urbanismo
+          </div>
+          
+          <div class="hamburger-menu" (click)="toggleMenu()">
+            &#9776;
+          </div>
+  
+          <div class="desktop-menu">
+            <a routerLink="/home">Home</a>
+            <a routerLink="/projetos">Projetos</a>
+            <a routerLink="/contato">Contato</a>
+          </div>
         </div>
       </div>
     </div>
-</header>
+  </header>
+  
+  <div [style.display]="menuVisible ? 'block' : 'none'" class="hamburger-dropdown">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/projetos">Projetos</a>
+    <a routerLink="/contato">Contato</a>
+  </div>
+  

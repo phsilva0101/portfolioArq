@@ -6,19 +6,28 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './components/cabecalho/cabecalho.component';
 import { RodapeComponent } from './components/rodape/rodape.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ProjetosComponent } from './pages/projetos/projetos.component';
+import { ContatoComponent } from './pages/contato/contato.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
     RodapeComponent,
-    HomeComponent
+    HomeComponent,
+    ProjetosComponent,
+    ContatoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
