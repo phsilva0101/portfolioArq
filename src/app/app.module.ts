@@ -11,6 +11,7 @@ import { ContatoComponent } from './pages/contato/contato.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './components/card/card.component';
+import { IconeWhatsappComponent } from './components/icone-whatsapp/icone-whatsapp.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CardComponent } from './components/card/card.component';
     ProjetosComponent,
     ContatoComponent,
     CardComponent,
+    IconeWhatsappComponent,
   ],
   imports: [
     BrowserModule,

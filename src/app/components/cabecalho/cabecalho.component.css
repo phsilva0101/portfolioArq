@@ -9,7 +9,7 @@
 
 .header {
   animation: slideInFromLeft 0.5s ease forwards;
-  background-color: #efc4b9;
+  background-color: #C3c4c4;
 }
 
 .logo-text {
@@ -39,7 +39,7 @@
 
 .hamburger-dropdown a:hover,
 .desktop-menu a:hover {
-  background-color: #efc4b9;
+  background-color: #C3c4c4;
 }
 
 .desktop-menu {

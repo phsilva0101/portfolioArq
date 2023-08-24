@@ -9,27 +9,18 @@ export class ProjetosComponent implements OnInit {
   projects = [
     {
       id: 1,
-      images: [
-        '../../../assets/images/image2.jpg',
-        '../../../assets/images/image3.jpg',
-      ],
-      title: 'Projeto 1',
+      images: Array.from({ length: 11 }, (v, i) => `../../../assets/motorhome/image${i + 1}.jpeg`),
+      title: 'Projeto Sala Retrô',
     },
     {
       id: 2,
-      images: [
-        '../../../assets/images/image2.jpg',
-        '../../../assets/images/image4.jpg',
-      ],
-      title: 'Projeto 2',
+      images: Array.from({ length: 18 }, (v, i) => `../../../assets/maquete/image${i + 1}.jpeg`),
+      title: 'Casa Marika-Alderton',
     },
     {
       id: 3,
-      images: [
-        '../../../assets/images/image3.jpg',
-        '../../../assets/images/image5.jpg',
-      ],
-      title: 'Projeto 3',
+      images: Array.from({ length: 6 }, (v, i) => `../../../assets/quiosque/image${i + 1}.jpeg`),
+      title: 'Quiosque Shopping',
     },
     {
       id: 4,

@@ -17,9 +17,9 @@
   }
 
   .detalhar{
-    background-color: #efc4b9;
+    background-color: #505457;
     border: none;
-    color: black;
+    color: white;
     padding: 5px 10px;
     text-align: center;
     text-decoration: none;
@@ -28,7 +28,9 @@
   }
 
   .detalhar:hover{
-    background-color: #b3968f;
+    background-color: #2D2926;
     color: white;
   }
+
+ 
   
