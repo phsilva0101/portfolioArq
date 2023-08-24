@@ -1,1 +1,11 @@
-<p>projetos works!</p>
+<div class="container">
+  <h2 class="text-center mt-5">Meus Projetos</h2>
+  <section class="text-center">
+    <p class="lead">Aqui estão alguns dos meus projetos. Clique em um para saber mais detalhes.</p>
+    </section>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let project of projects">
+      <app-card [project]="project"></app-card>
+    </div>
+  </div>
+</div>

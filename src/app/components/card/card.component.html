@@ -1,0 +1,22 @@
+<div class="card portfolio-card mt-4">
+    <div id="carouselExampleIndicators{{project.id}}" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item" *ngFor="let img of project.images; let isFirst = first" [ngClass]="{'active': isFirst}">
+          <img [src]="img" class="d-block w-100 card-img-top" alt="{{project.title}}">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carouselExampleIndicators' + project.id" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carouselExampleIndicators' + project.id" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+    <div class="card-body text-center">
+      <h5 class="card-title">{{ project.title }}</h5>
+      <button class="btn detalhar" (click)="navigateToProject()">Ver Detalhes</button>
+    </div>
+  </div>
+  

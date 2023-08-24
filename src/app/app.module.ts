@@ -10,6 +10,7 @@ import { ProjetosComponent } from './pages/projetos/projetos.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     ProjetosComponent,
     ContatoComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
