@@ -8,7 +8,7 @@
   
   .main-photo img {
     width: 100%;
-    height: 100%;
+    height: 700px;
     object-fit: cover;
     cursor: pointer;
   }
@@ -20,8 +20,8 @@
   }
   
   .small-photos img {
-    width: 100%;  /* Usa toda a largura do contêiner */
-    height: auto;  /* Mantém a proporção da imagem */
+    width: 300px;  /* Usa toda a largura do contêiner */
+    height: 300px;  /* Mantém a proporção da imagem */
     margin-bottom: 10px;
     cursor: pointer;
   }
@@ -48,7 +48,7 @@
 
   .description {
     text-align: center;  /* Centraliza o texto */
-    margin-top: 20px;  /* Espaço acima da descrição */
+    margin-top: 5%;  /* Espaço acima da descrição */
   }
   
   .description-title {

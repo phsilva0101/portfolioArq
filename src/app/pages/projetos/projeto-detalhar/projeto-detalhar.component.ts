@@ -19,7 +19,6 @@ export class ProjetoDetalharComponent implements OnInit {
     const pasta = localStorage.getItem('pasta')?.replace(/"/g, '');
     const titulo = localStorage.getItem('titulo');
 
-    console.log(length, pasta, titulo);
     this.photos = Array.from({ length: Number(length) }, (v, i) => `../../../assets/${pasta}/image${i + 1}.jpeg`);
     this.titleDescription = titulo ?? '';
     this.mainPhoto = this.photos[0];
