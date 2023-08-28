@@ -11,24 +11,25 @@ export class ProjetosComponent implements OnInit {
       id: 1,
       images: Array.from({ length: 11 }, (v, i) => `../../../assets/motorhome/image${i + 1}.jpeg`),
       title: 'Projeto Sala Retrô',
+      pasta: 'motorhome',
     },
     {
       id: 2,
       images: Array.from({ length: 18 }, (v, i) => `../../../assets/maquete/image${i + 1}.jpeg`),
       title: 'Casa Marika-Alderton',
+      pasta: 'maquete',
     },
     {
       id: 3,
       images: Array.from({ length: 6 }, (v, i) => `../../../assets/quiosque/image${i + 1}.jpeg`),
       title: 'Quiosque Shopping',
+      pasta: 'quiosque',
     },
     {
       id: 4,
-      images: [
-        '../../../assets/images/image4.jpg',
-        '../../../assets/images/image1.jpg',
-      ],
-      title: 'Projeto 4',
+      images: Array.from({ length: 25 }, (v, i) => `../../../assets/casa1Sketchup/image${i + 1}.jpeg`),
+      title: 'Projeto pessoal com Sketchup',
+      pasta: 'casa1Sketchup',
     },
     {
       id: 5,

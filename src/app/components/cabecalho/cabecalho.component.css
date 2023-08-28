@@ -46,6 +46,13 @@
   display: none;
 }
 
+.desktop-menu .menu-item:hover {
+  background-color: #505457 ;
+  border-radius: 25px;
+  color: white;
+}
+
+
 @media screen and (min-width: 992px) {
   .hamburger-menu,
   .hamburger-dropdown {

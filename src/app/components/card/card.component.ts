@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class CardComponent implements OnInit {
 
-  @Input() project: any = { images: [], title: '', id: '' };
+  @Input() project: any = { images: [], title: '', id: '', pasta: '' };
 
   constructor(private router: Router) { }
 
@@ -16,6 +16,11 @@ export class CardComponent implements OnInit {
   }
 
   navigateToProject(): void {
+    localStorage.setItem('length', JSON.stringify(this.project.images.length));
+    localStorage.setItem('pasta', JSON.stringify(this.project.pasta));
+    localStorage.setItem('titulo', JSON.stringify(this.project.title));
+
+
     this.router.navigate(['/projeto', this.project.id]);
   }
 
