@@ -1,22 +1,24 @@
-  <div class="container">
-
-  <div class="row mb-2">
-    <div class="gallery">
-      <div class="main-photo" [ngClass]="{'zoomed': isZoomed}" (click)="toggleZoom()">
-        <img [src]="mainPhoto" alt="Main photo">
-      </div>
-      <div class="small-photos">
-        <div *ngFor="let photo of photos">
-          <img [src]="photo" alt="photo" (click)="setMainPhoto(photo)">
+    <div class="row">
+      <div class="col-12">  <!-- Adicionado col-12 -->
+        <div class="gallery">
+          <div class="main-photo" [ngClass]="{'zoomed': isZoomed}" (click)="toggleZoom()">
+            <img [src]="mainPhoto" alt="Main photo">
+          </div>
+          <div class="small-photos">
+            <div *ngFor="let photo of photos">
+              <img [src]="photo" alt="photo" (click)="setMainPhoto(photo)">
+            </div>
+          </div>
         </div>
-      </div>
+      </div>  <!-- Fechamento de col-12 -->
     </div>
-  </div>
-
-  <div class="row mt-5">
-    <div class="description">
-      <h2 class="description-title">{{titleDescription}}</h2>
-      <p class="description-text">{{ projectDescription }}</p>
+  
+    <div class="row">
+      <div class="col-12">  <!-- Adicionado col-12 -->
+        <div class="description">
+          <h2 class="description-title">{{titleDescription}}</h2>
+          <p class="description-text">{{ projectDescription }}</p>
+        </div>
+      </div>  <!-- Fechamento de col-12 -->
     </div>
-  </div>
-</div>
+  
