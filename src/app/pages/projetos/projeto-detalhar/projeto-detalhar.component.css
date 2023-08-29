@@ -74,5 +74,40 @@
     cursor: zoom-out;
   }
   
+  @media screen and (max-width: 562px) {
+    .description {
+        text-align: center;  /* Centraliza o texto */
+        margin-top: 25%;  /* Espaço acima da descrição */
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: 4fr 1fr;  /* Proporção de 4:1 */
+        height: 50vh;  
+        width: 98vw;  
+        gap: 10px;  
+      }
+
+      .main-photo img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      
+      .small-photos {
+        overflow-y: auto;
+        overflow-x: hidden; 
+        height: 100%;  
+        width: 100px;
+      }
+      
+      .small-photos img {
+        width: 100px;  /* Usa toda a largura do contêiner */
+        height: 100px;  /* Mantém a proporção da imagem */
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+  }
   
   
