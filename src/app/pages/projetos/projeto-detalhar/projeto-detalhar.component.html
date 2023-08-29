@@ -1,20 +1,19 @@
   <div class="row">
-  <div class="gallery">
-    <div class="main-photo" [ngClass]="{'zoomed': isZoomed}" (click)="toggleZoom()">
-      <img [src]="mainPhoto" alt="Main photo">
-    </div>
-    <div class="small-photos">
-      <div *ngFor="let photo of photos">
-        <img [src]="photo" alt="photo" (click)="setMainPhoto(photo)">
+    <div class="gallery">
+      <div class="main-photo" [ngClass]="{'zoomed': isZoomed}" (click)="toggleZoom()">
+        <img [src]="mainPhoto" alt="Main photo">
+      </div>
+      <div class="small-photos">
+        <div *ngFor="let photo of photos">
+          <img [src]="photo" alt="photo" (click)="setMainPhoto(photo)">
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="description">
-    <h2 class="description-title">{{titleDescription}}</h2>
-    <p class="description-text">{{ projectDescription }}</p>
+  <div class="row mt-5">
+    <div class="description">
+      <h2 class="description-title">{{titleDescription}}</h2>
+      <p class="description-text">{{ projectDescription }}</p>
+    </div>
   </div>
-</div>
-
