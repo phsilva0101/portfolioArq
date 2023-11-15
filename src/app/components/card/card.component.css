@@ -17,19 +17,20 @@
   }
 
   .detalhar{
-    background-color: #505457;
+    background-color: #ff9e8f;
     border: none;
-    color: white;
+    color: #ffdfd0;
     padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: bold;
   }
 
   .detalhar:hover{
-    background-color: #2D2926;
-    color: white;
+    background-color: #ff7c70;
+    color: #ffdfd0;
   }
 
  
